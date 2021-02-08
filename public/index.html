@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+  <!-- Link inserted Home page -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+    rel="stylesheet">
+  <!-- FontAwesome icon -->
+  <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
+  <!-- Fontello icon -->
+  <link href="fontello/css/fontello.css" rel="stylesheet">
+  <!-- OwlCarosuel CSS -->
+  <link href="css/owl.carousel.css" type="text/css" rel="stylesheet">
+  <link href="css/owl.theme.default.css" type="text/css" rel="stylesheet">
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- Style CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--  -->
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+<!--  Home script -->
+<!-- /.tiny-footer-section -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- owl-carousel js -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- nice-select js -->
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/custom-script.js"></script>
+<script src="js/return-to-top.js"></script>
+<script>
+  //jQuery to collapse the navbar on scroll
+  $(window).scroll(function () {
+    if ($(".header-transparent").offset().top > 200) {
+      $(".fixed-top").addClass("top-nav-collapse");
+    } else {
+      $(".fixed-top").removeClass("top-nav-collapse");
+    }
+  });
+</script>
+
+<!--  -->
+<!-- script for animation in html -->
+
+<script>// for animation 
+  $(document).ready(function(){
+    $('.pp-quote').click(function(){
+      $('.pp-quote').removeClass("active");
+      $(this).addClass("active");
+  });
+  });
+  
+  $(document).ready(function(){
+      
+         // hide-top
+  
+          $('.li-quote-1').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');
+              $('.quote-text-1').addClass('show');
+              $('.quote-text-1').removeClass('hide-bottom');             
+          });
+  
+          $('.li-quote-2').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');
+              $('.quote-text-2').addClass('show');             
+              $('.quote-text-2').removeClass('hide-bottom');
+          });
+  
+          $('.li-quote-3').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');         
+              $('.quote-text-3').addClass('show');             
+              $('.quote-text-3').removeClass('hide-bottom');
+          });
+          $('.li-quote-4').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');      
+              $('.quote-text-4').addClass('show');             
+              $('.quote-text-4').removeClass('hide-bottom');
+          });
+          $('.li-quote-5').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');      
+              $('.quote-text-5').addClass('show');             
+              $('.quote-text-5').removeClass('hide-bottom');
+          });
+          $('.li-quote-6').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');      
+              $('.quote-text-6').addClass('show');             
+              $('.quote-text-6').removeClass('hide-bottom');
+          });
+          $('.li-quote-7').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');      
+              $('.quote-text-7').addClass('show');             
+              $('.quote-text-7').removeClass('hide-bottom');
+          });
+          $('.li-quote-8').click(function(e){ 
+              e.stopPropagation();
+              $(".show").addClass('hide-top');
+              $(".hide-top").removeClass('show');      
+              $('.quote-text-8').addClass('show');             
+              $('.quote-text-8').removeClass('hide-bottom');
+          });
+             
+      
+  });
+  
+  
+  $(document).ready(function(){
+      
+         // hide-top
+  
+          $('.li-quote-1').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-1').addClass('look');
+              $('.dp-name-1').removeClass('hide-dp-bottom');             
+          });
+  
+          $('.li-quote-2').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-2').addClass('look');
+              $('.dp-name-2').removeClass('hide-dp-bottom');             
+          });
+  
+          $('.li-quote-3').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-3').addClass('look');
+              $('.dp-name-3').removeClass('hide-dp-bottom');             
+          });
+          $('.li-quote-4').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-4').addClass('look');
+              $('.dp-name-4').removeClass('hide-dp-bottom');             
+          });
+          
+          $('.li-quote-5').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-5').addClass('look');
+              $('.dp-name-5').removeClass('hide-dp-bottom');             
+          });
+          
+          $('.li-quote-6').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-6').addClass('look');
+              $('.dp-name-6').removeClass('hide-dp-bottom');             
+          });
+          $('.li-quote-7').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-7').addClass('look');
+              $('.dp-name-7').removeClass('hide-dp-bottom');             
+          });
+          $('.li-quote-8').click(function(e){ 
+              e.stopPropagation();
+              $(".look").addClass('hide-dp-top');
+              $(".hide-dp-top").removeClass('look');
+              $('.dp-name-8').addClass('look');
+              $('.dp-name-8').removeClass('hide-dp-bottom');             
+          });
+             
+      
+  });
+</script>
+</html>
