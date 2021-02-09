@@ -1,0 +1,5 @@
+export {
+    vendorTypeGetData
+}
+
+from "./vendorTypeCreator";

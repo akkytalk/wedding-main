@@ -5,13 +5,14 @@ import Header from './Header'
 import HeroSecton from './HeroSection'
 import Testimonial from './Testimonal'
 import Venue from './Venue'
+import Venue2 from './Venue2'
 
 const Home = () => {
     return (
         <Fragment>
             <Header />
             <HeroSecton />
-            <Venue />
+            <Venue2 />
             <Testimonial />
             <Listing />
             <Footer />

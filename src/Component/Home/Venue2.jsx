@@ -1,109 +1,70 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../reduxStore/actions/index";
 
 const Venue = (props) => {
-    useEffect(() => {
-        props.onVendorTypeGetData();
-      }, []);
-    return (
-        <Fragment>
-            <div className="space-medium bg-white">
-                <div className="container">
-                    <div className="row">
-                        <div className="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
-                            <div className="section-title text-center">
-                                {/* section title start*/}
-                                <h2 className="mb10">Browse Vendors by Category</h2>
-                                <p>You can browse all venues by category with thumbnail image and category name.</p>
-                            </div>
-                            {/* /.section title start*/}
-                        </div>
-                    </div>
-                    <div className="row">
-                        {/* venue-categoris-block*/}
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="vendor-categories-block zoomimg">
-                                <div className="vendor-categories-img"> <a href="#"><img src="images/vendor-cat-img-1.jpg" alt="" className="img-fluid" /></a></div>
-                                <div className="vendor-categories-overlay">
-                                    <div className="vendor-categories-text">
-                                        <h4 className="mb0"><a href="#" className="vendor-categories-title">Wedding Venues</a></h4>
-                                        <p className="vendor-categories-numbers">5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* /.venue-categoris-block*/}
-                        </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="vendor-categories-block zoomimg">
-                                <div className="vendor-categories-img"> <a href="#"><img src="images/vendor-cat-img-2.jpg" alt="" className="img-fluid" /></a></div>
-                                <div className="vendor-categories-overlay">
-                                    <div className="vendor-categories-text">
-                                        <h4 className="mb0"><a href="#" className="vendor-categories-title">Photographers</a></h4>
-                                        <p className="vendor-categories-numbers">12</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* /.venue-categoris-block*/}
-                        </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="vendor-categories-block zoomimg">
-                                <div className="vendor-categories-img"> <a href="#"><img src="images/vendor-cat-img-3.jpg" alt="" className="img-fluid" /></a></div>
-                                <div className="vendor-categories-overlay">
-                                    <div className="vendor-categories-text">
-                                        <h4 className="mb0"><a href="#" className="vendor-categories-title">Florist</a></h4>
-                                        <p className="vendor-categories-numbers">14</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* /.venue-categoris-block*/}
-                        </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="vendor-categories-block zoomimg">
-                                <div className="vendor-categories-img"> <a href="#"><img src="images/vendor-cat-img-4.jpg" alt="" className="img-fluid" /></a></div>
-                                <div className="vendor-categories-overlay">
-                                    <div className="vendor-categories-text">
-                                        <h4 className="mb0"><a href="#" className="vendor-categories-title">Wedding Makeup</a></h4>
-                                        <p className="vendor-categories-numbers">2</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* /.venue-categoris-block*/}
-                        </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="vendor-categories-block zoomimg">
-                                <div className="vendor-categories-img"> <a href="#"><img src="images/vendor-cat-img-5.jpg" alt="" className="img-fluid" /></a></div>
-                                <div className="vendor-categories-overlay">
-                                    <div className="vendor-categories-text">
-                                        <h4 className="mb0"><a href="#" className="vendor-categories-title">Wedding Band</a></h4>
-                                        <p className="vendor-categories-numbers">10</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* /.venue-categoris-block*/}
-                        </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="vendor-categories-block zoomimg">
-                                <div className="vendor-categories-img"> <a href="#"><img src="images/vendor-cat-img-6.jpg" alt="" className="img-fluid" /></a></div>
-                                <div className="vendor-categories-overlay">
-                                    <div className="vendor-categories-text">
-                                        <h4 className="mb0"><a href="#" className="vendor-categories-title">Videography</a></h4>
-                                        <p className="vendor-categories-numbers">9</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* /.venue-categoris-block*/}
-                        </div>
-                    </div>
-                    {/* venue-categoris-btn */}
-                    <div className="row">
-                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center mt20"><a href="#" className="btn btn-primary btn-lg">Browse all category</a></div>
-                    </div>
-                    {/* /.venue-categoris-btn */}
-                </div>
+  useEffect(() => {
+    props.onVendorTypeGetData();
+  }, []);
+  return (
+    <Fragment>
+      <div className="space-medium bg-white">
+        <div className="container">
+          <div className="row">
+            <div className="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
+              <div className="section-title text-center">
+                {/* section title start*/}
+                <h2 className="mb10">Browse Vendors by Category</h2>
+                <p>
+                  You can browse all venues by category with thumbnail image and
+                  category name.
+                </p>
+              </div>
+              {/* /.section title start*/}
             </div>
-            {/* /.venue-categoris-section*/}
-            <div className="space-medium">
+          </div>
+          <div className="row">
+            {/* venue-categoris-block*/}
+            {props.vendorType.map((ven) => (
+              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                <div className="vendor-categories-block zoomimg">
+                  <div className="vendor-categories-img">
+                    {" "}
+                    <a href={`/${ven.name}`}>
+                      <img
+                        src={`https://source.unsplash.com/1600x900/?${ven.name}`}
+                        alt=""
+                        className="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div className="vendor-categories-overlay">
+                    <div className="vendor-categories-text">
+                      <h4 className="mb0">
+                        <a href={`/${ven.name}`} className="vendor-categories-title">
+                          {ven.name}
+                        </a>
+                      </h4>
+                      <p className="vendor-categories-numbers">{ven.id}</p>
+                    </div>
+                  </div>
+                </div>
+                {/* /.venue-categoris-block*/}
+              </div>
+            ))}
+          </div>
+          {/* venue-categoris-btn */}
+          <div className="row">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center mt20">
+              <a href="#" className="btn btn-primary btn-lg">
+                Browse all category
+              </a>
+            </div>
+          </div>
+          {/* /.venue-categoris-btn */}
+        </div>
+      </div>
+      <div className="space-medium">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
@@ -357,21 +318,20 @@ const Venue = (props) => {
                     </div>
                 </div>
             </div>
-        </Fragment>
-    )
-}
+    </Fragment>
+  );
+};
 
 const mapStateToProps = (state) => {
-    return {
-      vendorType: state.vendorType.vendorType,
-    };
+  return {
+    vendorType: state.vendorType.vendorType,
   };
-  
-  const mapDispatchToProps = (dispatch) => {
-    return {
-      onVendorTypeGetData: () => dispatch(actions.vendorTypeGetData()),
-    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onVendorTypeGetData: () => dispatch(actions.vendorTypeGetData()),
   };
-  
-  export default connect(mapStateToProps, mapDispatchToProps)(Venue);
-  
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Venue);
